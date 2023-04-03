@@ -30,6 +30,7 @@ body {
   .teclado {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    place-items: center;
     gap: 30px;
     border-radius: 30px;
     padding: 15px;
