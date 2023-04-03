@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    background-color: #191919;
+    min-height: 100vh;
+  }
+  
+  input {
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+  }
+  
+  h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .teclado {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    border-radius: 30px;
+    padding: 15px;
+  }
+  
+  .teclado_numbers {
+    border-radius: 100%;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+  }
+  
+  input[type=tel] {
+    background-color: #cccccc;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 22px;
+    height: 40px;
+    margin-bottom: 24px;
+    padding: 10px;
+    text-align: center;
+    width: 280px;
+  }
+  
+  .ativa {
+    background-color: yellow;
+  }
+
+  input[type=button]:active {
+    background-color: #cccccc;
+  }
