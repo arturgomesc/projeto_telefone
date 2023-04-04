@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
     <meta charset="UTF-8">
@@ -10,29 +11,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Telefone</title>
 
 </head>
+
 <body>
-    <h1>Telefone</h1>
-    <input type="tel" placeholder="">
-    <section class="teclado">
-        <input type="button" class="teclado_numbers" value="1">
-        <input type="button" class="teclado_numbers" value="2">
-        <input type="button" class="teclado_numbers" value="3">
-        <input type="button" class="teclado_numbers" value="4">
-        <input type="button" class="teclado_numbers" value="5">
-        <input type="button" class="teclado_numbers" value="6">
-        <input type="button" class="teclado_numbers" value="7">
-        <input type="button" class="teclado_numbers" value="8">
-        <input type="button" class="teclado_numbers" value="9">
-        <input type="button" class="teclado_numbers" value="*">
-        <input type="button" class="teclado_numbers" value="0">
-        <input type="button" class="teclado_numbers" value="#">
-        <input type="button" class="teclado_numbers" value= "&">
-    </section>
+    <main>
+        <h1>Telefone</h1>
+        <div class="display_container">
+            <input type="tel" class="display" placeholder="" disabled>
+            <button type="button" class="backspace" onclick="backspace()">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+        </div>
+        <form class="teclado" onsubmit="makeCall(event)">
+            <button tec-tecla="1" type="button" class="teclado_tecla" value="1">1</button>
+            <button tec-tecla="2" type="button" class="teclado_tecla" value="2">2</button>
+            <button tec-tecla="3" type="button" class="teclado_tecla" value="3">3</button>
+            <button tec-tecla="4" type="button" class="teclado_tecla" value="4">4</button>
+            <button tec-tecla="5" type="button" class="teclado_tecla" value="5">5</button>
+            <button tec-tecla="6" type="button" class="teclado_tecla" value="6">6</button>
+            <button tec-tecla="7" type="button" class="teclado_tecla" value="7">7</button>
+            <button tec-tecla="8" type="button" class="teclado_tecla" value="8">8</button>
+            <button tec-tecla="9" type="button" class="teclado_tecla" value="9">9</button>
+            <button tec-tecla="*" type="button" class="teclado_tecla" value="*">*</button>
+            <button tec-tecla="0" type="button" class="teclado_tecla" value="0">0</button>
+            <button tec-tecla="#" type="button" class="teclado_tecla" value="#">#</button>
+            <button type="submit" class="teclado_tecla centralizar" value="action">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+            </button>
+        </form>
+    </main>
+
+    <!-- Script -->
     <script src="main.js"></script>
 </body>
+
 </html>
