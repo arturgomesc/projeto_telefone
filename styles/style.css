@@ -46,6 +46,10 @@ body {
     font-size: 30px;
   }
   
+  .centralizar {
+    grid-column: 2/3;
+  }
+
   input[type=tel] {
     background-color: #cccccc;
     border-radius: 10px;
@@ -58,10 +62,7 @@ body {
     width: 280px;
   }
   
-  .ativa {
-    background-color: yellow;
-  }
-
   input[type=button]:active {
     background-color: #cccccc;
   }
+
