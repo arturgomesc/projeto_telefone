@@ -7,5 +7,9 @@ for(let i = 0; i < listaDeTeclas.length; i++) {
     tecla.onclick = () => {
         inputTel.value += tecla.value;
     }
+}
 
+const teclaChamada = document.querySelector('.centralizar');
+teclaChamada.onclick = () => {
+    inputTel.value += '...';
 }
